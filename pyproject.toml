@@ -1,0 +1,28 @@
+[project]
+name = "bayes-notes"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Max Caldwell", email = "max@scriptt.ai" }
+]
+dependencies = [
+    "sympy>=1.13.2",
+    "jupyter>=1.0.0",
+    "notebook>=7.2.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bayes_notes"]
